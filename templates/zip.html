@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <title>Zip's Tips</title>
+  <style>
+body {
+    width: 700px ;
+    margin-left: auto ;
+    margin-right: auto ;
+    {% if large %}
+      font-size: 20px;
+    {% else %}
+      font-size: 28px;
+    {% endif %}
+}
+.tip {
+  margin-top: 100px;
+  text-align: justify;
+}
+.dt {
+  margin-top: 15px;
+  font-size: 14px;
+}
+.dt a {
+  color: #ddd;
+}
+p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+  </style>
+</head><body>
+<div class="tip">
+  {{ tip["tiptxt"] | safe }}
+</div>
+<div class="dt">
+  <a href="/{{ tip['dt'] }}">#{{ tip['dt'] }}</a>
+</div>
+</body>
+</html>
