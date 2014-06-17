@@ -18,24 +18,27 @@ body {
   margin-top: 100px;
   text-align: justify;
 }
-.dt {
-  margin-top: 15px;
-  font-size: 14px;
-}
-.dt a {
-  color: #ddd;
-}
 p {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+.another {
+  margin-top: 150px;
+  font-size: 18px;
+  text-align: center;
+  color: #aaa;
+}
+.another a {
+  color: #aaa;
 }
   </style>
 </head><body>
 <div class="tip">
   {{ tip["tiptxt"] | safe }}
 </div>
-<div class="dt">
-  <a href="/{{ tip['dt'] }}">#{{ tip['dt'] }}</a>
+<div class="another">
+  <a href="/{{ tip['dt'] }}">link</a> |
+  <a href="/">more</a>
 </div>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
