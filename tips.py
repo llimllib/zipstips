@@ -12,7 +12,7 @@ TIPDATES = dict((tip["dt"], tip) for tip in TIPS)
 def tip():
     tip = random.choice(TIPS)
     large = False
-    if len(tip["tiptxt"].split()) > 250:
+    if len(tip["tiptxt"].split()) > 200:
         large = True
     return render_template("zip.html", tip=tip, large=large)
 
